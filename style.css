@@ -1,0 +1,63 @@
+.carousel {
+    width: 900px;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+
+}
+.cargar2 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.slide {
+    width: 100%;
+    display: none;
+    height: auto;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.buttonss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    bottom: 50%;
+    margin: 10px;
+}
+.buttonss button {
+    background-color: rgb(0, 0, 0, 00.1);
+    color: white;
+    border: none;
+}
+.cargar2::after {
+    content: '';
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+}
+.cargar2::before {
+    content: 'ESTO ES UNA PRUEBA DE CARRUSEL';
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 60px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+}
